@@ -1,7 +1,10 @@
 package bootcamp.santander.excessoesPersonalizadas;
 
 public class ParametrosInvalidosException extends Exception {
-
+    
+    public ParametrosInvalidosException() {
+        super();
+    }
     
     public String Message(){
        
