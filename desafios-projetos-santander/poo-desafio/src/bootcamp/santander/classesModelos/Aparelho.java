@@ -13,7 +13,7 @@ public class Aparelho {
     
     public Aparelho(String nome, String iMEI, List<Aplicativo> aplicativos) {
         this.nome = nome;
-        IMEI = iMEI;
+        this.IMEI = iMEI;
         this.aplicativos = aplicativos;
     }
 
@@ -30,7 +30,16 @@ public class Aparelho {
     }
 
     public void exibiraplicativos(List<Aplicativo> aplicativos){
-        System.out.println("Exibindo Aplicativos");
+        
+
+        for (Aplicativo aplicativo : aplicativos) {
+            System.out.println(aplicativo);
+        }
+
+    }
+
+    public void executarAplicativo(String nome){
+        System.out.println("executando aplicativo " + nome.toUpperCase());
     }
 
 }
