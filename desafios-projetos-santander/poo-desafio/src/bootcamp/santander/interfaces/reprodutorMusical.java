@@ -6,5 +6,5 @@ public interface reprodutorMusical {
     
     void pausar();
 
-    String selecionarMusica();
+    String selecionarMusica(String musica);
 }
