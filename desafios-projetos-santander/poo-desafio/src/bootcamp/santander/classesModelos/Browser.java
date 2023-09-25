@@ -5,6 +5,10 @@ import bootcamp.santander.interfaces.navegador;
 public class Browser extends Aplicativo implements navegador{
 
    
+    public Browser(String nome, String logo) {
+        super(nome, logo);
+    }
+    
     @Override
     public void exibirPagina() {
         System.out.println("Estou exibindo uma página WEB");
