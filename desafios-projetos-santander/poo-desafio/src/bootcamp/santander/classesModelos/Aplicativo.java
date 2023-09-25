@@ -5,6 +5,7 @@ public class Aplicativo {
 
     private String logo;
 
+
     public Aplicativo(String nome, String logo) {
         this.nome = nome;
         this.logo = logo;
@@ -14,7 +15,7 @@ public class Aplicativo {
     }
 
     public void exibirDetalhes(){
-        System.out.println("Exibindo Detalhes");
+        System.out.println(nome + " " + " | " +  logo);
     }
     
     public String getNome() {
@@ -23,5 +24,10 @@ public class Aplicativo {
 
     public String getLogo() {
         return logo;
+    }
+
+    @Override
+    public String toString(){
+        return nome + " | " + " " +  logo;
     }
 }
