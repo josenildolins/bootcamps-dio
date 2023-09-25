@@ -1,6 +1,6 @@
 package bootcamp.santander.interfaces;
 
-public interface Ipod {
+public interface reprodutorMusical {
     
     void play();
     

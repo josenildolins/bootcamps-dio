@@ -1,6 +1,6 @@
 package bootcamp.santander.interfaces;
 
-public interface Telefone {
+public interface ExecutorDeChamada {
     
     void ligar();
 

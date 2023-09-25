@@ -1,6 +1,6 @@
 package bootcamp.santander.interfaces;
 
-public interface Browser {
+public interface navegador {
 
     void exibirPagina();
 
