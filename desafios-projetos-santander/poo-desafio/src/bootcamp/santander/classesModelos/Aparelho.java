@@ -25,10 +25,6 @@ public class Aparelho {
         return IMEI;
     }
 
-    public List<Aplicativo> getAplicativos() {
-        return aplicativos;
-    }
-
     public void exibiraplicativos(List<Aplicativo> aplicativos){
         
 
