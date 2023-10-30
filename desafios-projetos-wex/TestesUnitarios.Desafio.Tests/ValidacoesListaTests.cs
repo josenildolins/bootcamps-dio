@@ -43,10 +43,10 @@ public class ValidacoesListaTests
         int numeroParaProcurar = 10;
 
         // Act
-        bool result = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
+        bool resultado = _validacoes.ListaContemDeterminadoNumero(lista, numeroParaProcurar);
 
         // Assert
-        Assert.False(result);
+        Assert.False(resultado);
     }
 
     [Fact]
@@ -57,9 +57,9 @@ public class ValidacoesListaTests
         List<int> resultadoEsperado = new List<int> { 10, 14, 16, 18 };
         
         // Act
-        List<int> result = new List<int>(_validacoes.MultiplicarNumerosLista(lista, 2));
+        List<int> resultado = new List<int>(_validacoes.MultiplicarNumerosLista(lista, 2));
         // Assert
-        Assert.All(result, x => x.Equals(resultadoEsperado));
+        Assert.All(resultado, x => x.Equals(resultadoEsperado));
     }
 
     [Fact]
@@ -70,10 +70,10 @@ public class ValidacoesListaTests
         int resultadoEsperado = 9;
 
         // Act
-        int result = _validacoes.RetornarMaiorNumeroLista(lista);
+        int resultado = _validacoes.RetornarMaiorNumeroLista(lista);
 
         // Assert
-        Assert.Equal(resultadoEsperado, result);
+        Assert.Equal(resultadoEsperado, resultado);
     }
 
     [Fact]
