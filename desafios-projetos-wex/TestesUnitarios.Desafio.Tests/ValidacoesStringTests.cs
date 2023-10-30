@@ -10,11 +10,11 @@ public class ValidacoesStringTests
     public void DeveRetornar6QuantidadeCaracteresDaPalavraMatrix()
     {
         // Arrange
-        var texto = "Matrix";
-        var resultadoEsperado = 6;
+        string texto = "Matrix";
+        int resultadoEsperado = 6;
 
         // Act
-        var resultado = _validacoes.RetornarQuantidadeCaracteres(texto);
+        int resultado = _validacoes.RetornarQuantidadeCaracteres(texto);
 
         // Assert
         Assert.Equal(resultadoEsperado, resultado);
@@ -24,8 +24,8 @@ public class ValidacoesStringTests
     public void DeveContemAPalavraQualquerNoTexto()
     {
         // Arrange
-        var texto = "Esse é um texto QUALQUER";
-        var textoProcurado = "Qualquer";
+        string texto = "Esse é um texto QUALQUER";
+        string textoProcurado = "Qualquer";
 
         // Act
          bool resultado = _validacoes.ContemCaractere(texto, textoProcurado);
@@ -38,11 +38,11 @@ public class ValidacoesStringTests
     public void NaoDeveConterAPalavraTesteNoTexto()
     {
         // Arrange
-        var texto = "Esse é um texto qualquer";
-        var textoProcurado = "teste";
+        string texto = "Esse é um texto qualquer";
+        string textoProcurado = "teste";
 
         // Act
-        var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
+        bool resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
         // Assert
         Assert.False(resultado);
@@ -53,11 +53,11 @@ public class ValidacoesStringTests
     {
 
         // Arrange
-        var texto = "Começo, meio e fim do texto procurado";
-        var textoProcurado = "procurado";
+        string texto = "Começo, meio e fim do texto procurado";
+        string textoProcurado = "procurado";
 
         // Act
-        var resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
+        bool resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
 
         // Assert
         Assert.True(resultado);
