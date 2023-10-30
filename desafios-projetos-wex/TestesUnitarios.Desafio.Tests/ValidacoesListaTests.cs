@@ -49,7 +49,7 @@ public class ValidacoesListaTests
         Assert.False(result);
     }
 
-    //TODO: Corrigir a anotação [Fact]
+    [Fact]
     public void DeveMultiplicarOsElementosDaListaPor2()
     {
         //TODO: Implementar método de teste
