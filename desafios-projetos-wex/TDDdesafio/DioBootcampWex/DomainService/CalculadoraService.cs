@@ -6,22 +6,32 @@ namespace DomainService
     {
         public double Divide(double x, double y)
         {
-            throw new NotImplementedException();
+            if (y == 0)
+            {
+                throw new DivideByZeroException();
+            }
+            
+            double result = x / y;
+            
+            return result;
         }
 
         public double Multiplicar(double x, double y)
         {
-            throw new NotImplementedException();
+            double result = x * y;
+            return result;
         }
 
         public double Somar(double x, double y)
         {
-            throw new NotImplementedException();
+            double result = x + y;
+            return result;
         }
 
         public double Subtrair(double x, double y)
         {
-            throw new NotImplementedException();
+            double result = x - y;
+            return result;
         }
     }
 }
