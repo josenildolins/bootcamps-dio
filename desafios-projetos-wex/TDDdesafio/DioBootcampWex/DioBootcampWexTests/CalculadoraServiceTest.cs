@@ -1,10 +1,11 @@
 using DomainService;
+using Repository;
 
 namespace DioBootcampWexTests
 {
     public class CalculadoraServiceTest
     {
-        private CalculadoraService _calculadora = new CalculadoraService();
+        private CalculadoraService _calculadora = new CalculadoraService(new HistoricoRepository());
 
         [Fact]
         public void ShouldReturn4()
@@ -37,7 +38,7 @@ namespace DioBootcampWexTests
         }
 
         [Fact]
-        public void ShouldReturn12()
+        public async void ShouldReturn12()
         {
             //Arrange
             double x = 24;
