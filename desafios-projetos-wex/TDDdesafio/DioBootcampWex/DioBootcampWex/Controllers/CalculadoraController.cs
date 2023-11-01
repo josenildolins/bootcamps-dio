@@ -1,33 +1,47 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using DomainService;
+using Microsoft.AspNetCore.Mvc;
+using Repository;
 
 namespace DioBootcampWex.Controllers
 {
     [ApiController]
     [Route("controller")]
-    public class CalculadoraController: ControllerBase
+    public class CalculadoraController : ControllerBase
     {
-        [HttpPost("somar")]
+        private readonly ICalculadoraService _operacoes;
+        public CalculadoraController(ICalculadoraService operacoes)
+        {
+            _operacoes = operacoes;
+        }
+
+        [HttpGet("somar")]
         public double somar(double x, double y)
         {
-            return x + y;
+            return _operacoes.Somar(x, y);
         }
 
-        [HttpPost("multiplicar")]
+        [HttpGet("subtrair")]
+        public double Subtrair(double x, double y)
+        {
+            return _operacoes.Subtrair(x, y);
+        }
+
+        [HttpGet("multiplicar")]
         public double multiplicar(double x, double y)
         {
-            return 0;
+            return _operacoes.Multiplicar(x, y);
         }
 
-        [HttpPost("dividir")]
+        [HttpGet("dividir")]
         public double dividir(double x, double y)
         {
-            return x / y;
+            return _operacoes.Divide(x, y);
         }
 
         [HttpGet("ObterHistorico")]
-        public string ObterHistorico()
+        public List<Historico> ObterHistorico()
         {
-            return "Histórico";
+            return _operacoes.ObterHistorico();
         }
     }
 }

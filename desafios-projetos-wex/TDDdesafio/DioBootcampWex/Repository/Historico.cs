@@ -1,16 +1,17 @@
-﻿namespace Repository
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Repository
 {
+    [PrimaryKey(nameof(id))]
     public class Historico
     {
-        private Guid _id;
+        public Guid id { get; }
 
-        private string resultado;
+        public double resultado { get; set; }
 
-        private DateTime data;
+        public double primeiroValor { get; set; }
 
-        public string ObterHistorico()
-        {
-            return "";
-        }
+        public double segundoValor { get; set; }
+        public DateTime data { get; set; }
     }
 }
