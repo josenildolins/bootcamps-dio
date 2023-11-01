@@ -5,29 +5,29 @@
 
 - [Josenildo Lins](https://github.com/josenildolins)
 
-## Blindando Seu CÛdigo com TDD e Testes Unit·rios Usando .NET Core
+## Blindando Seu C√≥digo com TDD e Testes Unit√°rios Usando .NET Core
 
-Este projeto tem por objetivo a pr·tica dos assuntos que fora aprendido durante as atividades do curso "Trabalhando com Desenvolvimento Orientado a Testes":
+Este projeto tem por objetivo a pr√°tica dos assuntos que fora aprendido durante as atividades do curso "Trabalhando com Desenvolvimento Orientado a Testes":
 
 - Como criar testes unitarios utilizando XUnit
-- ValidaÁıes de Testes Unit·rios com c#
+- Valida√ß√µes de Testes Unit√°rios com c#
 
-## DescriÁ„o do Desafio
+## Descri√ß√£o do Desafio
 Criar um projeto do zero ou reproduzir o projeto abordado nas aulas do bootcamp
 
 ## O que foi feito
 
- - Foi criado uma Api que simula as operaÁıes de uma Calculadora
+ - Foi criado uma Api que simula as opera√ß√µes de uma Calculadora
 
- - Neste projeto eu separei a implementaÁ„o do cÛdigo em 3 Camadas (AplicaÁ„o, DomÌnio e Dados)
+ - Neste projeto eu separei a implementa√ß√£o do c√≥digo em 3 Camadas (Aplica√ß√£o, Dom√≠nio e Dados)
  
- - Criei um projeto de teste que aponta para a camada de domÌnio
+ - Criei um projeto de teste que aponta para a camada de dom√≠nio
 
-1. Na Camada de aplicaÁ„o est„o as chamadas dos mÈtodos da camada de domÌnio
-2. Na Camada de DomÌnio esta localizada as regras de negÛcio da aplicaÁ„o e a implementaÁ„o dos mÈtodos
-3. Na camada de Dados est· localizada os dados persistidos em banco
+1. Na Camada de aplica√ß√£o est√£o as chamadas dos m√©todos da camada de dom√≠nio
+2. Na Camada de Dom√≠nio esta localizada as regras de neg√≥cio da aplica√ß√£o e a implementa√ß√£o dos m√©todos
+3. Na camada de Dados est√° localizada os dados persistidos em banco
 
-# Linguagem de programaÁ„o Utilizada
+# Linguagem de programa√ß√£o Utilizada
 
 - C#
 - AspnetCore(6.2.3
